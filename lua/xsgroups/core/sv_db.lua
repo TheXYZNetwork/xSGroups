@@ -1,7 +1,7 @@
 -- Setup
 hook.Add("xAdminPostInit", "xSGroupSetupDB", function() -- Make sure xAdmin's loaded
 	xAdmin.Database.Query("CREATE TABLE IF NOT EXISTS "..xAdmin.Config.Name.."_secondary_user(userid VARCHAR(32) NOT NULL PRIMARY KEY, `rank` TEXT NOT NULL)")
-	print(xAdmin.Info.Name.."_secondary_user")
+	print(xAdmin.Config.Name.."_secondary_user")
 end)
 
 -- Use functions
